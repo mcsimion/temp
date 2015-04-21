@@ -1,0 +1,6 @@
+- name: Sterge containere oprite
+  command: docker rm $(docker ps -a -q)
+
+- name: Sterge containerele untag
+  command: docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+

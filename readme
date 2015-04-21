@@ -1,0 +1,18 @@
+repo pe github
+script care sa ruleze pe toate host de tip ci-slave
+- sa creeze un dir numit /tmp /home/jankins (pe user grup jenking)
+- sa copieze toate fisierele din tmp
+- sa stearga toate containerele oprite
+- sa stearga imaginile none 
+
+
+
+repo pe github ansible cum vreti voi
+scris script care sa rulez pe toate ci-slave-*
+sa creeze un director tmp in /home/jenkins care sa apartina userului si grupului jenkins
+sa copieze toate fisierele din /tmp in /home/jenkins/tmp
+sa le stearga din /tmp
+sa stearga toate containerele de docker oprite
+sa stearga toate imaginile de docker care au nume <none>
+Cu mentiunea ca am intrebat ulterior daca la sfarsitul rularii, si ce e in /home/jenkins/tmp sa ii apartina userului jenkins si mi s-a raspuns da. 
+

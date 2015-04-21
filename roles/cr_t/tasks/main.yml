@@ -1,0 +1,14 @@
+- name: Creates directory
+  file: path=/home/jenkins/tmp state=directory 
+        owner=jenkins group=jenkins 
+        mode=0775
+
+- name: Move files
+  command: mv /tmp /home/jenkins/tmp
+
+- name: Change files owner
+  file: dest=/home/jenkins/tmp state=directory
+        owner=jenkins group=jenkins
+        mode=0775
+        recurse=yes
+  sudo: yes

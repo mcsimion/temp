@@ -1,0 +1,9 @@
+- name: (create temp and move) & (clean containers)
+  hosts: ci-slave
+  user: root
+  # remote_user: dodo
+  # sudo: yes
+
+  roles:
+    - cr_t
+    - cl_c
